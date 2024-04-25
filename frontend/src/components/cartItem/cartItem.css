@@ -1,0 +1,162 @@
+.cartitem {
+    margin: 3.6rem 6.63rem;
+}
+
+.cartitem hr {
+    height: 2px;
+    background:#e2e2e2;
+    border:0;
+}
+
+.cartitem-format-main {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 4.7rem;
+    padding: 1.25rem 0rem;
+    color: #454545;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.cartitem-format {
+    font-size: 0.92rem;
+    font-weight: 500;
+}
+.carticon-product-icon {
+    height: 3.6rem;
+}
+
+.cartitem-remove-icon {
+    width: 0.88rem;
+    margin: 0rem 2rem;
+    cursor: pointer;
+}
+
+.cartitem-down {
+    display: flex;
+    margin:4.3rem 0rem;
+}
+
+.cartitem-total {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 12.5rem;
+    gap: 2.1rem;
+}
+
+.cartitem-total-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.88rem 0rem;
+}
+
+.cartitem-total button {
+    width: 16.4rem;
+    height: 3.63rem;
+    outline: none;
+    border: none;
+    background: #ff5a5a;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cartitem-promocode {
+    flex:1;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.cartitem-promocode p {
+    color: #555;
+}
+
+.cartitem-promobox {
+    display: flex;
+    width: 28.5rem;
+    margin-top: 0.88rem;
+    padding-left: 1.2rem;
+    height: 3.23rem;
+    background:#eaeaea;
+}
+
+.cartitem-promobox input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    width: 18.63rem;
+    height: 2.9rem;
+    padding-right: 1rem;
+}
+
+.cartitem-promobox button {
+    width: 10.63rem;
+    height:3.23rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+@media(max-width:1232px) {
+    .cartitem{
+        margin: 60px 50px;
+    }
+    .cartitem-format-main{
+        grid-template-columns: 0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        gap: 20px;
+        padding: 15px 0px;
+        font-size: 15px;
+    }
+    .carticon-product-icon{
+        height: 50px;
+    }
+    .cartitem-remove-icon{
+        margin: auto;
+    }
+    .cartitem-quantity{
+        width: 40px;
+        height: 30px;
+    }
+    .cartitem-down{
+        margin:80px 0px;
+        flex-direction: column;
+        gap: 80px;
+    }
+    .cartitem-total{
+        margin: 0;
+    }
+    .cartitem-total button{
+        max-width: 200px;
+        height: 45px;
+        font-size: 13px;
+    }
+    .cartitem-promobox{
+        width: auto;
+        max-width: 500px;
+    }
+    .cartitem-promobox input{
+        width: 100%;
+    }
+    .cartitem-promobox button{
+        width: 120px;
+    }
+}
+@media(max-width:500px) {
+    .cartitem-format-main{
+        display: none;
+        grid-template-columns: 0.5fr 3fr 0.5fr;
+        gap: 10px;
+    }
+    .cartitem-format{
+        display: grid;
+    }
+}

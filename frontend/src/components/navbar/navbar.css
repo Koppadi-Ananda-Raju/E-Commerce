@@ -1,0 +1,224 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.8rem;
+    box-shadow: 0 1px 3px -2px  black;
+    align-items: center;
+}
+
+.nav_logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav_logo img {
+    width: 3.8rem;
+    height: 3.8rem;
+}
+
+.nav_logo > p {
+    color: #171717;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: #626262;
+    font-size:1.2rem;
+    font-weight: 500;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.nav-menu hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #FF4141;
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.nav-login-cart  button {
+    width: 9rem;
+    height: 3.2rem;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 4.8rem;
+    color: #515151;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.nav-login-cart button:active {
+    background: #f3f3f3;
+}
+
+.nav-cart-icon {
+    font-size: 1.8rem;
+}
+
+.nav-login-cart img {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.nav-cart-count {
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2.2rem;
+    margin-left: -3.4rem;
+    border-radius: 0.8rem;
+    font-size: 0.9rem;
+    background: red;
+    color: white;
+}
+
+.nav-dropdown {
+    display: none;
+}
+
+@media(max-width:1232px) {
+    .navbar {
+        padding: 0.8rem 3.1rem;
+    }
+    .nav_logo img {
+        width:2.5rem;
+        height: 2.5rem;
+    }
+    .nav_logo p {
+        font-size:1.5rem;
+    }
+    .nav-menu {
+        gap: 30px;
+        font-size: 1.04rem;
+    }
+    .nav-login-cart {
+        gap: 30px;
+    }
+    .nav-login-cart button {
+        width:6rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+    .nav-cart-count {
+        margin-left:-2.3rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:1024px) {
+    .navbar {
+        padding: 0.8rem 2.9rem;
+    }
+    .nav_logo img {
+        width:1.87rem;
+        height: 1.87rem;
+    }
+    .nav_logo p {
+        font-size:1.25rem;
+    }
+    .nav-menu {
+        gap: 20px;
+        font-size: 0.98rem;
+    }
+    .nav-login-cart {
+        gap: 25px;
+    }
+    .nav-login-cart button {
+        width:5rem;
+        height: 1.87rem;
+        font-size: 0.9rem;
+    }
+    .nav-login-cart img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .nav-cart-count {
+        margin-left:-1.88rem;
+        font-size: 0.77rem;
+        width: 0.99rem;
+        height: 0.99rem;
+    }
+}
+
+@media(max-width:800px) {
+    .navbar {
+        padding: 10px 0px;
+    }
+
+    .nav-dropdown {
+        display: block;
+        padding-top: 4px;
+        border:2px solid #7a7a7a;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        padding: 4px;
+        rotate: -90deg;
+        transition: 0.5s;
+    }
+    .nav-menu {
+        display: none;
+        height: 5rem;
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        justify-content: center;
+        top: 3.2rem;
+    }
+    .nav-menu-visible {
+        display: flex;
+    };
+    .nav-dropdown.open{
+        transform: rotate(90deg);
+    }
+    .nav-login-cart img {
+        position: relative;
+        top: 0.3rem;
+    }
+    .nav-cart-count {
+        position: relative;
+        top: 0.3rem;
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+}
+@media(max-width:500px){
+    .navbar{
+        width: 8px 0px;
+        gap: 0;
+    }
+    .nav_logo{
+        transform:scale(0.8);
+    }
+    .nav-menu{
+        height: 4.375rem;
+        top: 3.13rem;
+    }
+    .nav-login-cart{
+        transform: scale(0.8);
+    }
+}
